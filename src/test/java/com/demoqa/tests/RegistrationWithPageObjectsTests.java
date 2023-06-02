@@ -12,8 +12,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationWithPageObjectsTests extends TestBase {
 
-    RegistrationPage registrationPage = new RegistrationPage();
-
     @Test
     void successfulRegistrationTest() {
         registrationPage.openPage()
