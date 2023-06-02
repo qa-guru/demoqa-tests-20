@@ -38,5 +38,14 @@ public class RegistrationWithPageObjectsTests extends TestBase {
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         $(".table-responsive").shouldHave(text("Alex"), text("Egorov"),
                 text("alex@egorov.com"), text("1234567890"));
+
+        /* todo
+        registrationPage.verifyResult("Full name", "Alex Egorov")
+                .verifyResult("Email", "alex@egorov.com")
+                ...
+         */
+        $(".table-responsive").$(byText("Full name"))
+                .sibling(0).shouldHave(text("Alex Egorov"));
     }
+
 }
