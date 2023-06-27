@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class RegistrationRemoteTests extends TestBase {
+public class RegistrationRemoteTests extends RemoteTestBase {
 
     @Test
     @Tag("remote")
